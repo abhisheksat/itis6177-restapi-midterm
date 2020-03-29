@@ -10,13 +10,13 @@ app.controller("HttpGetController", function ($scope, $http, $window) {
 
     $scope.GetClassroom = function (subname) {
         alert(subname);
-        $http.get('http://localhost:3000/api/v1/subjects/classroom/' + subname)
+        $http.get('http://159.65.32.96:3000/api/v1/subjects/classroom/' + subname)
             .then(function (response) {
                 if (response.status == 200 && response.data) {
                     console.log(response.data);
                     $scope.classroom = response.data;
 
-                    $http.get('http://localhost:3000/api/v1/subjects/classroomstudents/' + subname)
+                    $http.get('http://159.65.32.96:3000/api/v1/subjects/classroomstudents/' + subname)
                         .then(function (response) {
                             if (response.status == 200 && response.data) {
                                 $scope.classroom.studs = response.data;
@@ -33,7 +33,7 @@ app.controller("HttpGetController", function ($scope, $http, $window) {
 
     $scope.getInstructorSubjects = function (instructor) {
         alert(instructor);
-        $http.post('http://localhost:3000/api/v1/subjects/instructors/' + instructor)
+        $http.post('http://159.65.32.96:3000/api/v1/subjects/instructors/' + instructor)
             .then(function (response) {
                 if (response.data && response.status == 200) {
                     $scope.instructorSubs = response.data;
@@ -45,7 +45,7 @@ app.controller("HttpGetController", function ($scope, $http, $window) {
     }
 
     $scope.GetAllInstructorData = function () {
-        $http.get('http://localhost:3000/api/v1/subjects/instructors')
+        $http.get('http://159.65.32.96:3000/api/v1/subjects/instructors')
             .then(function (response) {
                 if (response.status == 200 && response.data) {
                     console.log(response.data);
@@ -58,7 +58,7 @@ app.controller("HttpGetController", function ($scope, $http, $window) {
     }
 
     $scope.GetAllSubjectData = function () {
-        $http.get('http://localhost:3000/api/v1/subjects')
+        $http.get('http://159.65.32.96:3000/api/v1/subjects')
             .then(function (response) {
                 if (response.status == 200 && response.data) {
                     console.log(response.data);
@@ -75,7 +75,7 @@ app.controller("HttpGetController", function ($scope, $http, $window) {
         var choice = confirm('Are you sure you want to delete the user?');
 
         if (choice == true) {
-            $http.delete('http://localhost:3000/api/v1/students/' + studentId)
+            $http.delete('http://159.65.32.96:3000/api/v1/students/' + studentId)
                 .then(function (response) {
                     if (response.data && response.status == 200) {
                         alert('Student Deleted Successfully');
@@ -96,7 +96,7 @@ app.controller("HttpGetController", function ($scope, $http, $window) {
             }
         }
 
-        $http.patch('http://localhost:3000/api/v1/students', updateEnrollmentData, config)
+        $http.patch('http://159.65.32.96:3000/api/v1/students', updateEnrollmentData, config)
             .then(function (response) {
                 console.log(response.data);
                 alert(response.data);
@@ -113,7 +113,7 @@ app.controller("HttpGetController", function ($scope, $http, $window) {
             }
         }
 
-        $http.patch('http://localhost:3000/api/v1/students', updateAdvisorData, config)
+        $http.patch('http://159.65.32.96:3000/api/v1/students', updateAdvisorData, config)
             .then(function (response) {
                 console.log(response.data);
                 alert(response.data);
@@ -122,7 +122,7 @@ app.controller("HttpGetController", function ($scope, $http, $window) {
     };
 
     $scope.updateStudentEnrollment = function (studentId) {
-        $http.post('http://localhost:3000/api/v1/students/' + studentId)
+        $http.post('http://159.65.32.96:3000/api/v1/students/' + studentId)
             .then(function (response) {
                 if (response.data[0] && response.status == 200) {
                     console.log("RESP : " + JSON.stringify(response.data[0]));
@@ -137,7 +137,7 @@ app.controller("HttpGetController", function ($scope, $http, $window) {
     };
 
     $scope.updateStudentAdvisor = function (studentId) {
-        $http.post('http://localhost:3000/api/v1/students/' + studentId)
+        $http.post('http://159.65.32.96:3000/api/v1/students/' + studentId)
             .then(function (response) {
                 if (response.data[0] && response.status == 200) {
                     console.log(response.data[0]);
@@ -160,7 +160,7 @@ app.controller("HttpGetController", function ($scope, $http, $window) {
             }
         }
 
-        $http.put('http://localhost:3000/api/v1/students', dataEdit, config)
+        $http.put('http://159.65.32.96:3000/api/v1/students', dataEdit, config)
             .then(function (response) {
                 console.log(response.data);
                 alert(response.data);
@@ -170,7 +170,7 @@ app.controller("HttpGetController", function ($scope, $http, $window) {
 
     $scope.updateStudent = function (data) {
         alert(data);
-        $http.post('http://localhost:3000/api/v1/students/' + data)
+        $http.post('http://159.65.32.96:3000/api/v1/students/' + data)
             .then(function (response) {
                 if (response.data[0] && response.status == 200) {
                     console.log(response.data[0]);
@@ -183,7 +183,7 @@ app.controller("HttpGetController", function ($scope, $http, $window) {
     };
 
     $scope.GetAllData = function () {
-        $http.get('http://localhost:3000/api/v1/students')
+        $http.get('http://159.65.32.96:3000/api/v1/students')
             .then(function (response) {
                 console.log(response.data);
                 $scope.studentDetails = response.data;
@@ -202,7 +202,7 @@ app.controller("HttpGetController", function ($scope, $http, $window) {
             }
         }
 
-        $http.post('http://localhost:3000/api/v1/students', $scope.studentData, config)
+        $http.post('http://159.65.32.96:3000/api/v1/students', $scope.studentData, config)
             .then(function (response) {
                 console.log("Resp : " + response.data);
                 // $scope.Details = response.data;
