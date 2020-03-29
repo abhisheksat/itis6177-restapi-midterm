@@ -1,0 +1,41 @@
+<div class="row" data-ng-init="GetAllData();">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <h4>Delete a Student</h4>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+<br />
+<br />
+
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Student Id</th>
+                        <th>Student Name</th>
+                        <th>Email Address</th>
+                        <th>Advisor</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="sd in studentDetails">
+
+                        <td>{{sd.studentId}}</td>
+                        <td>{{sd.studentFirstName}} {{sd.studentLastName}}</td>
+                        <td>{{sd.emailAddress}}</td>
+                        <td>{{sd.advisor}}</td>
+                        <td>
+                            <button class="btn btn-primary" ng-click="deleteStudent(sd.studentId);">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>
