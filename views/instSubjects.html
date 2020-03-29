@@ -1,0 +1,33 @@
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <h4>Subject(s) for {{instructorSubs[0].instructor}}</h4>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+<br />
+<br />
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>Subject Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="sub in instructorSubs">
+
+                        <td>{{$index + 1}}</td>
+                        <td>{{sub.subject}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-md-4"></div>
+</div>

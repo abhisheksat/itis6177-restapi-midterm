@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="HttpGetController">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>ITIS 6177 | MidTerm App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="./../scripts/app.js"></script>
+    <script src="./../scripts/angularcontroller.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#!index">Student's App</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#!index">Home</a></li>
+                <li><a href="#!addNewStudent">Add New Student</a></li>
+                <li><a href="#!updateStudentDetails">Update Student Details</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">Change Student Attributes <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#!changeAdvisor">Change Advisor</a></li>
+                        <li><a href="#!changeEnrolledSemester">Change Enrolled Semester</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">Subjects <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#!subjectByName">Subjects By Name</a></li>
+                        <li><a href="#!subjectByInstructor">Subjects By Instrcutor</a></li>
+                    </ul>
+                </li>
+                <li><a href="#!subjectwiseClassroom">Subjectwise Classroom</a></li>
+                <li><a href="#!deleteStudent">Delete Student Records</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <h1>STUDENT'S APP</h1>
+    </div>
+
+    <div ng-view></div>
+
+</body>
+
+</html>

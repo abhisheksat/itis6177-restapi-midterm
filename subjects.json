@@ -1,0 +1,58 @@
+[
+    {
+        "subject": "Intelligent Systems",
+        "instructor": "Dr. Stephaine Barfield"
+    },
+    {
+        "subject": "Knowledge Discovery in Databases",
+        "instructor": "Dr. Stephen Emigh"
+    },
+    {
+        "subject": "Network Based Application Development",
+        "instructor": "Dr. Natalie Fern"
+    },
+    {
+        "subject": "Visual Analytics",
+        "instructor": "Dr. Stephen Emigh"
+    },
+    {
+        "subject": "Database Systems",
+        "instructor": "Dr. Cyndy Goldammer"
+    },
+    {
+        "subject": "Network Security",
+        "instructor": "Dr. Brandon Callaro"
+    },
+    {
+        "subject": "Algorithms and Data Structures",
+        "instructor": "Dr. Freeman Gochal"
+    },
+    {
+        "subject": "Computer Communication and Networks",
+        "instructor": "Dr. Brandon Callaro"
+    },
+    {
+        "subject": "Project Management",
+        "instructor": "Dr. Kimbery Madarang"
+    },
+    {
+        "subject": "System Integration",
+        "instructor": "Dr. Marti Maybury"
+    },
+    {
+        "subject": "Computer Graphics",
+        "instructor": "Dr. Kerry Theodorov"
+    },
+    {
+        "subject": "Business Analytics",
+        "instructor": "Dr. Layla Springe"
+    },
+    {
+        "subject": "Data Mining",
+        "instructor": "Dr. Cyndy Goldammer"
+    },
+    {
+        "subject": "Machine Learning",
+        "instructor": "Dr. Hillary Skulski"
+    }
+]

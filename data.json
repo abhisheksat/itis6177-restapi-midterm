@@ -1,0 +1,194 @@
+[
+    {
+        "_id": "101",
+        "studentFirstName": "James",
+        "studentLastName": "Anderson",
+        "studentAge": "23",
+        "gender": "Male",
+        "emailAddress": "james.anderson@gmail.com",
+        "phoneNumber": "980-123-1233",
+        "enrolledSemester": "Fall 2019",
+        "advisor": "Dr. Natalie Fern",
+        "subjects": [
+            "Intelligent Systems",
+            "Knowledge Discovery in Databases",
+            "Network Based Application Development"
+        ]
+    },
+    {
+        "_id": "102",
+        "studentFirstName": "Stuart",
+        "studentLastName": "Broad",
+        "studentAge": "24",
+        "gender": "Male",
+        "emailAddress": "stuart.broad@gmail.com",
+        "phoneNumber": "980-545-8583",
+        "enrolledSemester": "Fall 2019",
+        "advisor": "Dr. Natalie Fern",
+        "subjects": [
+            "Visual Analytics",
+            "Database Systems",
+            "Network Security"
+        ]
+    },
+    {
+        "_id": "103",
+        "studentFirstName": "Brett",
+        "studentLastName": "Lee",
+        "studentAge": "24",
+        "gender": "Male",
+        "emailAddress": "brett.lee@gmail.com",
+        "phoneNumber": "980-876-9796",
+        "enrolledSemester": "Fall 2019",
+        "advisor": "Dr. Natalie Fern",
+        "subjects": [
+            "Intelligent Systems",
+            "Algorithms and Data Structures",
+            "Computer Communication and Networks"
+        ]
+    },
+    {
+        "_id": "104",
+        "studentFirstName": "Bhuvneshwar",
+        "studentLastName": "Kumar",
+        "studentAge": "25",
+        "gender": "Male",
+        "emailAddress": "bhuvneshwar.kumar@gmail.com",
+        "phoneNumber": "980-799-0848",
+        "enrolledSemester": "Spring 2020",
+        "advisor": "Dr. Stephen Emigh",
+        "subjects": [
+            "Project Management",
+            "System Integration",
+            "Computer Graphics"
+        ]
+    },
+    {
+        "_id": "105",
+        "studentFirstName": "Waqar",
+        "studentLastName": "Younis",
+        "studentAge": "26",
+        "gender": "Male",
+        "emailAddress": "waqar.younis@gmail.com",
+        "phoneNumber": "980-423-9583",
+        "enrolledSemester": "Spring 2020",
+        "advisor": "Dr. Stephen Emigh",
+        "subjects": [
+            "Business Analytics",
+            "Data Mining",
+            "Machine Learning"
+        ]
+    },
+    {
+        "_id": "106",
+        "studentFirstName": "Albert",
+        "studentLastName": "Einstein",
+        "studentAge": "22",
+        "gender": "Male",
+        "emailAddress": "albert.einstein@gmail.com",
+        "phoneNumber": "980-374-9491",
+        "enrolledSemester": "Fall 2020",
+        "advisor": "Dr. Stephen Emigh",
+        "subjects": [
+            "Network Security",
+            "Algorithms and Data Structures",
+            "Knowledge Discovery in Databases"
+        ]
+    },
+    {
+        "_id": "107",
+        "studentFirstName": "Dorothy",
+        "studentLastName": "Hodgkin",
+        "studentAge": "21",
+        "gender": "Female",
+        "emailAddress": "dorothy.hodgkin@gmail.com",
+        "phoneNumber": "985-323-2342",
+        "enrolledSemester": "Fall 2020",
+        "advisor": "Dr. Freeman Gochal",
+        "subjects": [
+            "Project Management",
+            "Network Based Application Development",
+            "System Integration"
+        ]
+    },
+    {
+        "_id": "108",
+        "studentFirstName": "Johannes",
+        "studentLastName": "Kepler",
+        "studentAge": "24",
+        "gender": "Male",
+        "emailAddress": "johannes.kepler@gmail.com",
+        "phoneNumber": "985-393-7482",
+        "enrolledSemester": "Fall 2020",
+        "advisor": "Dr. Freeman Gochal",
+        "subjects": [
+            "Machine Learning",
+            "Computer Communication and Networks",
+            "Visual Analytics"
+        ]
+    },
+    {
+        "_id": "109",
+        "studentFirstName": "Lise",
+        "studentLastName": "Meitner",
+        "studentAge": "22",
+        "gender": "Female",
+        "emailAddress": "lise.meitner@gmail.com",
+        "phoneNumber": "981-838-2032",
+        "enrolledSemester": "Fall 2020",
+        "advisor": "Dr. Freeman Gochal",
+        "subjects": [
+            "Database Systems",
+            "Knowledge Discovery in Databases",
+            "Data Mining"
+        ]
+    },
+    {
+        "_id": "110",
+        "studentFirstName": "Marie",
+        "studentLastName": "Curie",
+        "studentAge": "22",
+        "gender": "Female",
+        "emailAddress": "marie.curie@gmail.com",
+        "phoneNumber": "838-838-9900",
+        "enrolledSemester": "Fall 2020",
+        "advisor": "Dr. Cyndy Goldammer",
+        "subjects": [
+            "Computer Graphics",
+            "Knowledge Discovery in Databases",
+            "Algorithms and Data Structures"
+        ]
+    },
+    {
+        "_id": "111",
+        "studentFirstName": "Melissa",
+        "studentLastName": "Franklin",
+        "studentAge": "23",
+        "gender": "Female",
+        "emailAddress": "melissa.franklin@gmail.com",
+        "phoneNumber": "903-234-0393",
+        "enrolledSemester": "Fall 2020",
+        "advisor": "Dr. Cyndy Goldammer",
+        "subjects": [
+            "Database Systems",
+            "System Integration",
+            "Business Analytics"
+        ]
+    },
+    {
+        "_id": "112",
+        "studentFirstName": "Michael",
+        "studentLastName": "Faraday",
+        "studentAge": "25",
+        "gender": "Male",
+        "emailAddress": "michael.faraday@gmail.com",
+        "phoneNumber": "323-838-0303",
+        "enrolledSemester": "Fall 2020",
+        "advisor": "Dr. Cyndy Goldammer",
+        "subjects": [
+            "System Integration",
+            "Algorithms and Data Structures",
+            "Network Based Application Development"
+        ]
+    }
+]

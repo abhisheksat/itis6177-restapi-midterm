@@ -1,0 +1,94 @@
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <h4>Edit Student Details Here</h4>
+        <br />
+    </div>
+    <div class="col-md-2"></div>
+</div>
+<br />
+<br />
+
+<form class="form-horizontal">
+
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="studentId">Student ID:</label>
+        <div class="col-sm-6 col-md-6">
+            <input type="text" class="form-control" id="studentId" placeholder="Enter Student ID" name="studentId"
+                ng-model="studentDataEdit.studentId" readonly required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="fname">First Name:</label>
+        <div class="col-sm-6 col-md-6">
+            <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter First Name"
+                ng-model="studentDataEdit.studentFirstName" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="lname">Last Name:</label>
+        <div class="col-sm-6 col-md-6">
+            <input type="text" class="form-control" id="lname" name="lname" placeholder="Enter Last Name"
+                ng-model="studentDataEdit.studentLastName" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="age">Age:</label>
+        <div class="col-sm-3 col-md-3">
+            <input type="text" class="form-control" id="age" name="age" placeholder="Enter Age"
+                ng-model="studentDataEdit.studentAge" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="gender">Gender:</label>
+        <div class="col-sm-6 col-md-6">
+            <input type="radio" id="male" name="gender" ng-model="studentDataEdit.gender" value="Male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" ng-model="studentDataEdit.gender" value="Female">
+            <label for="female">Female</label><br>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Email:</label>
+        <div class="col-sm-10 col-md-6">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email"
+                ng-model="studentDataEdit.emailAddress" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="phone">Phone:</label>
+        <div class="col-sm-10 col-md-6">
+            <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Phone"
+                ng-model="studentDataEdit.phoneNumber" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="enrolled">Enrolled Semester:</label>
+        <div class="col-sm-10 col-md-6">
+            <input type="text" class="form-control" id="enrolled" name="enrolled" placeholder="Enter Enrolled Semester"
+                ng-model="studentDataEdit.enrolledSemester" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="advisor">Advisor:</label>
+        <div class="col-sm-10 col-md-6">
+            <input type="text" class="form-control" id="advisor" name="advisor" placeholder="Enter Advisor"
+                ng-model="studentDataEdit.advisor" required>
+        </div>
+    </div>
+</form>
+
+<div class="row">
+    <div class="col-md-5"></div>
+    <button class="btn btn-primary" ng-click="EditStudentDetails(studentDataEdit);">UPDATE STUDENT DATA</button>
+</div>
+<br />
+<br />
