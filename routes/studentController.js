@@ -102,6 +102,8 @@ router.get('/', function (request, response) {
  *         type: string
  *       advisor:
  *         type: string
+ *       subjects:
+ *         type: array
  * /students:
  *   post:
  *     tags:
@@ -153,6 +155,11 @@ router.get('/', function (request, response) {
  *         in: formData
  *         type: string
  *         required: true
+ *       - name: subjects
+ *         in: formdata
+ *         type: array
+ *         items:
+ *           type: string
  *     responses:
  *       400:
  *         description: Invalid Request. Bad Request Body.
